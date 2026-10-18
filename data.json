@@ -1,1 +1,154 @@
-{"updated":null,"days":[],"krs":[]}
+{
+  "updated": "2026-10-18T19:41:30.631Z",
+  "days": [
+    {
+      "n": 0,
+      "jour": "Départ",
+      "date": "2026-10-18",
+      "realise": 0,
+      "ideal": 0,
+      "total": 11
+    },
+    {
+      "n": 1,
+      "jour": "Lu 19",
+      "date": "2026-10-19",
+      "realise": 0.7,
+      "total": 11,
+      "ideal": 2.2
+    },
+    {
+      "n": 2,
+      "jour": "Ma 20",
+      "date": "2026-10-20",
+      "realise": 0.7,
+      "total": 11,
+      "ideal": 4.4
+    },
+    {
+      "n": 3,
+      "jour": "Me 21",
+      "date": "2026-10-21",
+      "total": 11,
+      "ideal": 6.6,
+      "realise": 0.7
+    },
+    {
+      "n": 4,
+      "jour": "Je 22",
+      "date": "2026-10-22",
+      "total": 11,
+      "ideal": 8.8,
+      "realise": 0.7
+    },
+    {
+      "n": 5,
+      "jour": "Ve 23",
+      "date": "2026-10-23",
+      "ideal": 11,
+      "realise": 0.7,
+      "total": 11
+    }
+  ],
+  "krs": [
+    {
+      "label": "1 veille spécifique fonctionnelle validée par le prof expert",
+      "objectif": "S'ouvrir sur le marché vaudois",
+      "ordre": 1,
+      "realise": 0,
+      "cible": 1,
+      "unite": "",
+      "progression": 0
+    },
+    {
+      "label": "20 réponses à nos messages",
+      "objectif": "S'ouvrir sur le marché vaudois",
+      "ordre": 1,
+      "realise": 1,
+      "cible": 20,
+      "unite": "réponses",
+      "progression": 5
+    },
+    {
+      "label": "3 ventes",
+      "objectif": "S'ouvrir sur le marché vaudois",
+      "ordre": 1,
+      "realise": 1,
+      "cible": 3,
+      "unite": "ventes",
+      "progression": 33
+    },
+    {
+      "label": "Au minimum 780 CHF de chiffre d'affaires",
+      "objectif": "S'ouvrir sur le marché vaudois",
+      "ordre": 1,
+      "realise": 250,
+      "cible": 780,
+      "unite": "CHF",
+      "progression": 32
+    },
+    {
+      "label": "1 fournisseur sélectionné avec un prix fixe",
+      "objectif": "Lancer le sous-projet « gobelet réutilisable »",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 1,
+      "unite": "fournisseur",
+      "progression": 0
+    },
+    {
+      "label": "Design et prix de location de nos verres validés",
+      "objectif": "Lancer le sous-projet « gobelet réutilisable »",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 1,
+      "unite": "",
+      "progression": 0
+    },
+    {
+      "label": "Post d'annonce : 50 interactions (10 % des vues)",
+      "objectif": "Lancer le sous-projet « gobelet réutilisable »",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 50,
+      "unite": "interactions",
+      "progression": 0
+    },
+    {
+      "label": "Post d'annonce : 500 vues",
+      "objectif": "Lancer le sous-projet « gobelet réutilisable »",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 500,
+      "unite": "vues",
+      "progression": 0
+    },
+    {
+      "label": "10 inscriptions au premier tournoi",
+      "objectif": "Préparer le premier tournoi",
+      "ordre": 3,
+      "realise": 0,
+      "cible": 10,
+      "unite": "inscriptions",
+      "progression": 0
+    },
+    {
+      "label": "Avoir 1 partenaire boisson",
+      "objectif": "Préparer le premier tournoi",
+      "ordre": 3,
+      "realise": 0,
+      "cible": 1,
+      "unite": "partenaire",
+      "progression": 0
+    },
+    {
+      "label": "Trouver 3 sponsors",
+      "objectif": "Préparer le premier tournoi",
+      "ordre": 3,
+      "realise": 0,
+      "cible": 3,
+      "unite": "sponsors",
+      "progression": 0
+    }
+  ]
+}
