@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Burn-up Rocket Week</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600;700&display=swap">
+<style>
+  :root { --bg:#F5F5DC; --card:#FBFAF0; --ink:#0F0F0F; --muted:rgba(15,15,15,.6); --line:rgba(15,15,15,.12); --red:#C8102E; --ok:#23704A; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 15px/1.45 "DM Sans", system-ui, Arial, sans-serif; padding:16px }
+  .wrap { max-width:980px; margin:0 auto; display:flex; flex-direction:column; gap:14px }
+  header { display:flex; justify-content:space-between; align-items:end; gap:12px; flex-wrap:wrap }
+  .eyebrow { font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--red) }
+  h1 { font-family:"Bebas Neue", Impact, sans-serif; font-weight:400; font-size:44px; line-height:.95; margin:4px 0 0; letter-spacing:.02em }
+  .stats { display:flex; gap:22px; flex-wrap:wrap }
+  .stat b { display:block; font-family:"Bebas Neue", Impact, sans-serif; font-weight:400; font-size:34px; line-height:1; font-variant-numeric:tabular-nums }
+  .stat span { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted) }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px }
+  .chart { position:relative; height:320px }
+  .krs { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px }
+  .obj h2 { font-family:"Bebas Neue", Impact, sans-serif; font-weight:400; font-size:22px; margin:0 0 6px; letter-spacing:.02em }
+  .kr { padding:8px 0; border-top:1px solid var(--line) }
+  .kr-top { display:flex; justify-content:space-between; gap:10px; font-size:14px }
+  .kr-top b { font-variant-numeric:tabular-nums; white-space:nowrap }
+  .bar { height:7px; background:var(--line); border-radius:99px; overflow:hidden; margin-top:6px }
+  .bar i { display:block; height:100%; background:var(--red); border-radius:99px }
+  .done .bar i { background:var(--ok) } .done b { color:var(--ok) }
+  footer { font-size:12px; color:var(--muted) }
+  .msg { padding:30px; text-align:center; color:var(--muted) }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><div class="eyebrow">PimpMyTable · Rocket Week</div><h1>Burn-up</h1></div>
+    <div class="stats" id="stats"></div>
+  </header>
+  <div class="card"><div class="chart"><canvas id="chart" aria-label="Burn-up des résultats clés"></canvas></div></div>
+  <div class="krs" id="krs"></div>
+  <footer id="foot">Chargement des données…</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const fmt = n => Number(n || 0).toLocaleString('fr-CH', { maximumFractionDigits: 1 });
+const todayZurich = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Zurich' }).format(new Date());
+
+fetch('data.json?t=' + Date.now()).then(r => r.json()).then(data => {
+  const days = data.days || [];
+  if (!days.length) { document.getElementById('foot').textContent = 'Pas encore de données.'; return; }
+  const total = days[0].total || 0;
+  const done = days.map(d => (d.date && d.date > todayZurich) ? null : d.realise);
+  const last = [...done].reverse().find(v => v !== null) ?? 0;
+  const reached = (data.krs || []).filter(k => k.progression >= 100).length;
+  const ca = (data.krs || []).find(k => /chiffre d'affaires/i.test(k.label));
+
+  document.getElementById('stats').innerHTML =
+    `<div class="stat"><b>${fmt(last)} / ${total}</b><span>KR réalisés</span></div>` +
+    `<div class="stat"><b>${total ? Math.round(last / total * 100) : 0} %</b><span>Avancement</span></div>` +
+    `<div class="stat"><b>${reached}</b><span>KR atteints</span></div>` +
+    (ca ? `<div class="stat"><b>${fmt(ca.realise)}.–</b><span>CA Vaud (CHF)</span></div>` : '');
+
+  new Chart(document.getElementById('chart'), {
+    type: 'line',
+    data: {
+      labels: days.map(d => d.jour),
+      datasets: [
+        { label: 'Réalisé', data: done, borderColor: '#C8102E', backgroundColor: 'rgba(200,16,46,.10)', fill: true, borderWidth: 3, tension: .25, pointRadius: 4, pointBackgroundColor: '#C8102E' },
+        { label: 'Rythme idéal', data: days.map(d => d.ideal), borderColor: 'rgba(15,15,15,.45)', borderDash: [6, 6], borderWidth: 2, pointRadius: 0 },
+        { label: 'Total à atteindre', data: days.map(d => d.total), borderColor: '#0F0F0F', borderWidth: 1.5, pointRadius: 0 },
+      ],
+    },
+    options: {
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        y: { beginAtZero: true, suggestedMax: total, ticks: { stepSize: 1, font: { family: 'DM Sans' } }, grid: { color: 'rgba(15,15,15,.08)' }, title: { display: true, text: 'Résultats clés' } },
+        x: { ticks: { font: { family: 'DM Sans' } }, grid: { display: false } },
+      },
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { family: 'DM Sans' }, usePointStyle: true } },
+        tooltip: { callbacks: { label: c => `${c.dataset.label} : ${fmt(c.parsed.y)} KR` } },
+      },
+    },
+  });
+
+  const groups = {};
+  (data.krs || []).forEach(k => (groups[k.objectif] ??= []).push(k));
+  document.getElementById('krs').innerHTML = Object.entries(groups).map(([obj, list]) => `
+    <div class="card obj"><h2>${obj}</h2>${list.map(k => `
+      <div class="kr ${k.progression >= 100 ? 'done' : ''}">
+        <div class="kr-top"><span>${k.label}</span><b>${fmt(k.realise)} / ${fmt(k.cible)}</b></div>
+        <div class="bar"><i style="width:${Math.min(100, k.progression)}%"></i></div>
+      </div>`).join('')}</div>`).join('');
+
+  const u = data.updated ? new Date(data.updated).toLocaleString('fr-CH', { timeZone: 'Europe/Zurich', dateStyle: 'short', timeStyle: 'short' }) : '–';
+  document.getElementById('foot').textContent = `Données Notion mises à jour le ${u}. Rafraîchissement automatique toutes les 15 minutes environ.`;
+}).catch(() => { document.getElementById('foot').textContent = 'Les données ne sont pas encore disponibles.'; });
+</script>
+</body>
+</html>
