@@ -1,0 +1,28 @@
+name: Cases photo de l'accueil
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/make_cases.py
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - name: Fabriquer les images
+        run: python scripts/make_cases.py
+      - name: Enregistrer les images
+        run: |
+          git config user.name "burnup-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cases
+          git diff --cached --quiet || (git commit -m "Cases photo de l'accueil" && git pull --rebase && git push)
