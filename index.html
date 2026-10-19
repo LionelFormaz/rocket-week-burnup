@@ -54,13 +54,15 @@ fetch('data.json?t=' + Date.now()).then(r => r.json()).then(data => {
   const done = days.map(d => (d.date && d.date > todayZurich) ? null : d.realise);
   const last = [...done].reverse().find(v => v !== null) ?? 0;
   const reached = (data.krs || []).filter(k => k.progression >= 100).length;
-  const ca = (data.krs || []).find(k => /chiffre d'affaires/i.test(k.label));
+  const caOf = re => (data.krs || []).find(k => /chiffre d'affaires/i.test(k.label) && re.test(k.label + ' ' + k.objectif));
+  const caVd = caOf(/vaud/i), caVs = caOf(/valais/i);
 
   document.getElementById('stats').innerHTML =
     `<div class="stat"><b>${fmt(last)} / ${total}</b><span>KR réalisés</span></div>` +
     `<div class="stat"><b>${total ? Math.round(last / total * 100) : 0} %</b><span>Avancement</span></div>` +
     `<div class="stat"><b>${reached}</b><span>KR atteints</span></div>` +
-    (ca ? `<div class="stat"><b>${fmt(ca.realise)}.–</b><span>CA Vaud (CHF)</span></div>` : '');
+    (caVd ? `<div class="stat"><b>${fmt(caVd.realise)}.–</b><span>CA Vaud (CHF)</span></div>` : '') +
+    (caVs ? `<div class="stat"><b>${fmt(caVs.realise)}.–</b><span>CA Valais (CHF)</span></div>` : '');
 
   new Chart(document.getElementById('chart'), {
     type: 'line',
