@@ -1,53 +1,53 @@
 {
-  "updated": "2026-10-18T19:51:05.837Z",
+  "updated": "2026-10-19T09:09:30.074Z",
   "days": [
     {
       "n": 0,
       "jour": "Départ",
       "date": "2026-10-18",
-      "realise": 0,
+      "realise": 0.2,
       "ideal": 0,
-      "total": 11
+      "total": 15
     },
     {
       "n": 1,
       "jour": "Lu 19",
       "date": "2026-10-19",
-      "realise": 0,
-      "total": 11,
-      "ideal": 2.2
+      "realise": 0.2,
+      "total": 15,
+      "ideal": 3
     },
     {
       "n": 2,
       "jour": "Ma 20",
       "date": "2026-10-20",
-      "realise": 0,
-      "total": 11,
-      "ideal": 4.4
+      "realise": 0.2,
+      "total": 15,
+      "ideal": 6
     },
     {
       "n": 3,
       "jour": "Me 21",
       "date": "2026-10-21",
-      "total": 11,
-      "ideal": 6.6,
-      "realise": 0
+      "total": 15,
+      "ideal": 9,
+      "realise": 0.2
     },
     {
       "n": 4,
       "jour": "Je 22",
       "date": "2026-10-22",
-      "total": 11,
-      "ideal": 8.8,
-      "realise": 0
+      "total": 15,
+      "ideal": 12,
+      "realise": 0.2
     },
     {
       "n": 5,
       "jour": "Ve 23",
       "date": "2026-10-23",
-      "ideal": 11,
-      "realise": 0,
-      "total": 11
+      "ideal": 15,
+      "realise": 0.2,
+      "total": 15
     }
   ],
   "krs": [
@@ -70,7 +70,7 @@
       "progression": 0
     },
     {
-      "label": "3 ventes",
+      "label": "3 ventes dans le canton de Vaud",
       "objectif": "S'ouvrir sur le marché vaudois",
       "ordre": 1,
       "realise": 0,
@@ -79,7 +79,7 @@
       "progression": 0
     },
     {
-      "label": "Au minimum 780 CHF de chiffre d'affaires",
+      "label": "Au minimum 780 CHF de chiffre d'affaires dans le canton de Vaud",
       "objectif": "S'ouvrir sur le marché vaudois",
       "ordre": 1,
       "realise": 0,
@@ -88,9 +88,45 @@
       "progression": 0
     },
     {
+      "label": "10 retours de jeunesses valaisannes",
+      "objectif": "Ventes sur le Valais",
+      "ordre": 2,
+      "realise": 1,
+      "cible": 10,
+      "unite": "retours",
+      "progression": 10
+    },
+    {
+      "label": "3 ventes en Valais",
+      "objectif": "Ventes sur le Valais",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 3,
+      "unite": "ventes",
+      "progression": 0
+    },
+    {
+      "label": "40 jeunesses valaisannes contactées",
+      "objectif": "Ventes sur le Valais",
+      "ordre": 2,
+      "realise": 2,
+      "cible": 40,
+      "unite": "jeunesses",
+      "progression": 5
+    },
+    {
+      "label": "Au minimum 780 CHF de chiffre d'affaires en Valais",
+      "objectif": "Ventes sur le Valais",
+      "ordre": 2,
+      "realise": 0,
+      "cible": 780,
+      "unite": "CHF",
+      "progression": 0
+    },
+    {
       "label": "1 fournisseur sélectionné avec un prix fixe",
       "objectif": "Lancer le sous-projet « gobelet réutilisable »",
-      "ordre": 2,
+      "ordre": 3,
       "realise": 0,
       "cible": 1,
       "unite": "fournisseur",
@@ -99,7 +135,7 @@
     {
       "label": "Design et prix de location de nos verres validés",
       "objectif": "Lancer le sous-projet « gobelet réutilisable »",
-      "ordre": 2,
+      "ordre": 3,
       "realise": 0,
       "cible": 1,
       "unite": "",
@@ -108,7 +144,7 @@
     {
       "label": "Post d'annonce : 50 interactions (10 % des vues)",
       "objectif": "Lancer le sous-projet « gobelet réutilisable »",
-      "ordre": 2,
+      "ordre": 3,
       "realise": 0,
       "cible": 50,
       "unite": "interactions",
@@ -117,7 +153,7 @@
     {
       "label": "Post d'annonce : 500 vues",
       "objectif": "Lancer le sous-projet « gobelet réutilisable »",
-      "ordre": 2,
+      "ordre": 3,
       "realise": 0,
       "cible": 500,
       "unite": "vues",
@@ -126,7 +162,7 @@
     {
       "label": "10 inscriptions au premier tournoi",
       "objectif": "Préparer le premier tournoi",
-      "ordre": 3,
+      "ordre": 4,
       "realise": 0,
       "cible": 10,
       "unite": "inscriptions",
@@ -135,7 +171,7 @@
     {
       "label": "Avoir 1 partenaire boisson",
       "objectif": "Préparer le premier tournoi",
-      "ordre": 3,
+      "ordre": 4,
       "realise": 0,
       "cible": 1,
       "unite": "partenaire",
@@ -144,7 +180,7 @@
     {
       "label": "Trouver 3 sponsors",
       "objectif": "Préparer le premier tournoi",
-      "ordre": 3,
+      "ordre": 4,
       "realise": 0,
       "cible": 3,
       "unite": "sponsors",
