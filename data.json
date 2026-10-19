@@ -1,5 +1,23 @@
 {
-  "updated": "2026-10-19T09:09:30.074Z",
+  "updated": "2026-10-19T09:13:37.930Z",
+  "dbg": [
+    [
+      "Ventes sur le Valais",
+      "2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-18|À contacter|Client|0|Valais,2026-10-18|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-18|Contacté|Client|0|Valais,2026-10-18|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-18|Refusé|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais,2026-10-19|À contacter|Client|0|Valais"
+    ],
+    [
+      "Préparer le premier tournoi",
+      "2026-10-19|||0|,2026-10-19|||0|"
+    ],
+    [
+      "S'ouvrir sur le marché vaudois",
+      "2026-10-19|Contacté|Client|0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|Contacté||0|Vaud,2026-10-19|||0|,2026-10-19|À contacter|Client|0|Vaud,2026-10-19|Contacté|Client|0|Vaud,2026-10-19|Contacté|Client|0|Vaud,2026-10-19|Contacté|Client|0|Vaud,2026-10-19|Contacté|Client|0|Vaud,2026-10-19|Contacté|Client|0|Vaud"
+    ],
+    [
+      "Lancer le sous-projet « gobelet réutilisable »",
+      ""
+    ]
+  ],
   "days": [
     {
       "n": 0,
@@ -58,7 +76,9 @@
       "realise": 0,
       "cible": 1,
       "unite": "",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "20 réponses à nos messages",
@@ -67,7 +87,9 @@
       "realise": 0,
       "cible": 20,
       "unite": "réponses",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "3 ventes dans le canton de Vaud",
@@ -76,7 +98,9 @@
       "realise": 0,
       "cible": 3,
       "unite": "ventes",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Au minimum 780 CHF de chiffre d'affaires dans le canton de Vaud",
@@ -85,7 +109,9 @@
       "realise": 0,
       "cible": 780,
       "unite": "CHF",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "10 retours de jeunesses valaisannes",
@@ -94,7 +120,9 @@
       "realise": 1,
       "cible": 10,
       "unite": "retours",
-      "progression": 10
+      "progression": 10,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "1;1;1;1;1;1;1"
     },
     {
       "label": "3 ventes en Valais",
@@ -103,7 +131,9 @@
       "realise": 0,
       "cible": 3,
       "unite": "ventes",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "40 jeunesses valaisannes contactées",
@@ -112,7 +142,9 @@
       "realise": 2,
       "cible": 40,
       "unite": "jeunesses",
-      "progression": 5
+      "progression": 5,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "2;2;2;2;2;2;2"
     },
     {
       "label": "Au minimum 780 CHF de chiffre d'affaires en Valais",
@@ -121,7 +153,9 @@
       "realise": 0,
       "cible": 780,
       "unite": "CHF",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=67;rep=0;ref=1;cont=19;vs=47;p5=67;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "1 fournisseur sélectionné avec un prix fixe",
@@ -130,7 +164,9 @@
       "realise": 0,
       "cible": 1,
       "unite": "fournisseur",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Design et prix de location de nos verres validés",
@@ -139,7 +175,9 @@
       "realise": 0,
       "cible": 1,
       "unite": "",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Post d'annonce : 50 interactions (10 % des vues)",
@@ -148,7 +186,9 @@
       "realise": 0,
       "cible": 50,
       "unite": "interactions",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Post d'annonce : 500 vues",
@@ -157,7 +197,9 @@
       "realise": 0,
       "cible": 500,
       "unite": "vues",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "10 inscriptions au premier tournoi",
@@ -166,7 +208,9 @@
       "realise": 0,
       "cible": 10,
       "unite": "inscriptions",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=0;rep=0;ref=0;cont=0;vs=0;p5=0;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Avoir 1 partenaire boisson",
@@ -175,7 +219,9 @@
       "realise": 0,
       "cible": 1,
       "unite": "partenaire",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=2;rep=0;ref=0;cont=0;vs=0;p5=2;",
+      "valeurs": "0;0;0;0;0;0;0"
     },
     {
       "label": "Trouver 3 sponsors",
@@ -184,7 +230,9 @@
       "realise": 0,
       "cible": 3,
       "unite": "sponsors",
-      "progression": 0
+      "progression": 0,
+      "debug": "n=2;rep=0;ref=0;cont=0;vs=0;p5=2;",
+      "valeurs": "0;0;0;0;0;0;0"
     }
   ]
 }
