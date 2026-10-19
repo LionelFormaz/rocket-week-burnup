@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T09:15:39.812Z",
+  "updated": "2026-10-19T11:41:34.984Z",
   "days": [
     {
       "n": 0,
@@ -13,7 +13,7 @@
       "n": 1,
       "jour": "Lu 19",
       "date": "2026-10-19",
-      "realise": 0.2,
+      "realise": 1,
       "total": 15,
       "ideal": 3
     },
@@ -21,7 +21,7 @@
       "n": 2,
       "jour": "Ma 20",
       "date": "2026-10-20",
-      "realise": 0.2,
+      "realise": 1,
       "total": 15,
       "ideal": 6
     },
@@ -31,7 +31,7 @@
       "date": "2026-10-21",
       "total": 15,
       "ideal": 9,
-      "realise": 0.2
+      "realise": 1
     },
     {
       "n": 4,
@@ -39,14 +39,14 @@
       "date": "2026-10-22",
       "total": 15,
       "ideal": 12,
-      "realise": 0.2
+      "realise": 1
     },
     {
       "n": 5,
       "jour": "Ve 23",
       "date": "2026-10-23",
       "ideal": 15,
-      "realise": 0.2,
+      "realise": 1,
       "total": 15
     }
   ],
@@ -91,28 +91,28 @@
       "label": "10 retours de jeunesses valaisannes",
       "objectif": "Ventes sur le Valais",
       "ordre": 2,
-      "realise": 1,
+      "realise": 2,
       "cible": 10,
       "unite": "retours",
-      "progression": 10
+      "progression": 20
     },
     {
       "label": "3 ventes en Valais",
       "objectif": "Ventes sur le Valais",
       "ordre": 2,
-      "realise": 0,
+      "realise": 1,
       "cible": 3,
       "unite": "ventes",
-      "progression": 0
+      "progression": 33
     },
     {
       "label": "40 jeunesses valaisannes contactées",
       "objectif": "Ventes sur le Valais",
       "ordre": 2,
-      "realise": 2,
+      "realise": 19,
       "cible": 40,
       "unite": "jeunesses",
-      "progression": 5
+      "progression": 48
     },
     {
       "label": "Au minimum 780 CHF de chiffre d'affaires en Valais",
