@@ -13,7 +13,7 @@ CASES = [
     ('crm', '02', 'CRM', 'Prospects Valais et Vaud, fournisseurs, sponsors', '1752159684779-0639174cdfac'),
     ('kanban', '03', 'Kanban\ndes tâches', 'Qui fait quoi, et pour quand', '1676276375581-da33fe6d1c8b'),
     ('debriefs', '04', 'Débriefs\ndu jour', 'Réussites, échecs et apprentissages de chacun', '1758691736934-e5d6d0c7f875'),
-    ('evenement', '05', 'Événement', 'Tournoi #2 à Sion : concept et logistique', '1680404961803-6e3e119dcfe3'),
+    ('evenement', '05', 'Événement', 'Tournoi de beer pong, région de Saint-Maurice', '1680404961803-6e3e119dcfe3'),
     ('fichiers', '06', 'Fichiers', 'Visuels, offres, devis et documents partagés', '1583521214690-73421a1829a9'),
 ]
 
