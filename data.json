@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T12:14:19.231Z",
+  "updated": "2026-10-19T12:57:55.110Z",
   "days": [
     {
       "n": 0,
@@ -109,7 +109,7 @@
       "label": "40 jeunesses valaisannes contactées",
       "objectif": "Ventes sur le Valais",
       "ordre": 2,
-      "realise": 47,
+      "realise": 50,
       "cible": 40,
       "unite": "jeunesses",
       "progression": 100
