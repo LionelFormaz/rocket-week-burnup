@@ -1,4 +1,4 @@
-# Fabrique les 4 cases photo de la page d'accueil Rocket Week (titre écrit sur la photo).
+# Fabrique les cases photo de la page d'accueil Rocket Week (titre écrit sur la photo).
 import io, os, sys, urllib.request
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -9,10 +9,11 @@ FONTS = {
     'dm': 'https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/DMSans%5Bopsz,wght%5D.ttf',
 }
 CASES = [
-    ('objectifs', '01', 'Objectifs\n& burn-up', 'Nos 3 objectifs, les résultats clés et la courbe', '1629721671030-a83edbb11211'),
-    ('crm', '02', 'CRM', 'Établissements vaudois, fournisseurs et sponsors', '1752159684779-0639174cdfac'),
-    ('debriefs', '03', 'Débriefs\ndu jour', 'Réussites, échecs et apprentissages de chacun', '1758691736934-e5d6d0c7f875'),
-    ('fichiers', '04', 'Fichiers', 'Visuels, offres, devis et documents partagés', '1583521214690-73421a1829a9'),
+    ('objectifs', '01', 'Objectifs\n& burn-up', 'Nos 4 objectifs, les résultats clés et la courbe', '1629721671030-a83edbb11211'),
+    ('crm', '02', 'CRM', 'Prospects Valais et Vaud, fournisseurs, sponsors', '1752159684779-0639174cdfac'),
+    ('kanban', '03', 'Kanban\ndes tâches', 'Qui fait quoi, et pour quand', '1676276375581-da33fe6d1c8b'),
+    ('debriefs', '04', 'Débriefs\ndu jour', 'Réussites, échecs et apprentissages de chacun', '1758691736934-e5d6d0c7f875'),
+    ('fichiers', '05', 'Fichiers', 'Visuels, offres, devis et documents partagés', '1583521214690-73421a1829a9'),
 ]
 
 def get(url):
