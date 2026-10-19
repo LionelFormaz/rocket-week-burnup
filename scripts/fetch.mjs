@@ -63,6 +63,7 @@ for (const r of burnup) {
 }
 
 const payload = {
+  dbg: objectifs.map(o => [val(o.properties['Objectif']), val(o.properties['Traces texte'])]),
   days: Object.values(days).sort((a, b) => a.n - b.n),
   krs: krs.map(k => {
     const p = k.properties;
@@ -75,6 +76,8 @@ const payload = {
       cible: Number(val(p['Cible'])) || 0,
       unite: val(p['Unité']) || '',
       progression: Number(val(p['Progression (%)'])) || 0,
+      debug: val(p['Debug']),
+      valeurs: val(p['Valeurs']),
     };
   }).sort((a, b) => a.ordre - b.ordre || a.label.localeCompare(b.label, 'fr')),
 };
