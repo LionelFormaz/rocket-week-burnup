@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T11:57:04.653Z",
+  "updated": "2026-10-21T08:05:06.162Z",
   "days": [
     {
       "n": 0,
@@ -31,7 +31,7 @@
       "date": "2026-10-21",
       "total": 15,
       "ideal": 9,
-      "realise": 2.8
+      "realise": 2.9
     },
     {
       "n": 4,
@@ -39,14 +39,14 @@
       "date": "2026-10-22",
       "total": 15,
       "ideal": 12,
-      "realise": 2.8
+      "realise": 2.9
     },
     {
       "n": 5,
       "jour": "Ve 23",
       "date": "2026-10-23",
       "ideal": 15,
-      "realise": 2.8,
+      "realise": 2.9,
       "total": 15
     }
   ],
